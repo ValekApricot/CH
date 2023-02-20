@@ -45,4 +45,15 @@
 ![image](https://user-images.githubusercontent.com/116540788/220071018-2f25383d-903c-461e-b48d-659dc948fa5d.png)
 
 
+<b>Окно со списком продуктов</b>
+
+
+![image](https://user-images.githubusercontent.com/116540788/220127078-121409fb-bdf8-4c01-8911-7f2dddddf98b.png)
+
+
+<b>Добавли новый продукт</b>
+
+
+![image](https://user-images.githubusercontent.com/116540788/220127224-8e626c5e-ff10-4aa3-877f-11c4180e2b47.png)
+
 
