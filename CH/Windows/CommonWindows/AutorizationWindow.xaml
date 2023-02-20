@@ -1,0 +1,109 @@
+﻿<Window x:Class="CoffeeHouse.Windows.CommonWindows.AutorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoffeeHouse.Windows.CommonWindows"
+        mc:Ignorable="d"
+        Title="AutorizationWindow" Height="500" Width="800"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize"
+        WindowState="Normal">
+    
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="D:\CoffeeHouse\CoffeeHouse\Resourses\Images\JpgFormat\1380310295-kofe-ch2--22.jpg"/>
+        </Grid.Background>
+
+        <Rectangle Stroke="Black"
+                   StrokeThickness="10"
+                   >
+            <Rectangle.Fill>
+                <ImageBrush/>
+            </Rectangle.Fill>
+        </Rectangle>
+
+
+        <StackPanel Margin="10 10 500 0">
+            <TextBlock Text="COFFEE HOUSE"
+                       Background="Black"
+                       Height="40"
+                       FontSize="30"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       TextAlignment="Center"
+                       
+                       Padding="5"/>
+
+            <TextBlock Text="Введите Логин:"
+                       Background="Black"
+                       Margin="0 30 0 0"
+                       Height="40"
+                       FontSize="20"
+                       Foreground="White"
+                       TextAlignment="Left"
+                       Padding="10"/>
+
+            <TextBox   x:Name="TbLogin"
+                       Text="Login"
+                       Background="Black"
+                       Margin="0 5"
+                       Height="50"
+                       FontSize="20"
+                       BorderThickness="0"
+                       Foreground="White"
+                       TextAlignment="Left"
+                       Padding="10" 
+                       GotFocus="TbLogin_GotFocus"
+                       LostFocus="TbLogin_LostFocus"/>
+
+
+            <TextBlock Text="Введите Пароль:"
+                       Background="Black"
+                       Margin="0 30 0 0"
+                       Height="40"
+                       FontSize="20"
+                       Foreground="White"
+                       TextAlignment="Left"
+                       Padding="10"/>
+
+            <PasswordBox   x:Name="TbPassword" 
+                           Background="Black"
+                           Margin="0 5"
+                           Height="50"
+                           Foreground="White"
+                           Padding="15" 
+                           BorderThickness="0"
+                           Password="Password"
+                           HorizontalContentAlignment="Left"
+                           LostFocus="TbPassword_LostFocus"
+                           GotFocus="TbPassword_GotFocus"/>
+            <Button
+                    x:Name="BtnGo"
+                    Height="50"
+                    Background="Black"
+                    Content="Войти"
+                    FontSize="20"
+                    Foreground="White"
+                    FontWeight="Bold"
+                    BorderThickness="1"
+                    BorderBrush="Black"
+                Click="BtnGo_Click"/>
+
+
+            <Button 
+                x:Name="BtnToReg"
+                Content="Нет аккаунта? Регистрация"
+                   Background="Black"
+                   Foreground="White"
+                   HorizontalContentAlignment="Center"
+                    BorderThickness="1"
+                    BorderBrush="Black"
+                   Margin="0 20"
+                   Click="BtnToReg_Click"
+                   />
+
+        </StackPanel>
+    </Grid>
+</Window>
