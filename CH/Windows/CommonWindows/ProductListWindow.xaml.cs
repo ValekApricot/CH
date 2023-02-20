@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoffeeHouse.DataBase;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
+using CoffeeHouse.ClassHelper;
+using CoffeeHouse.DataBase;
+using static CoffeeHouse.ClassHelper.EFClass;
+
+
 namespace CoffeeHouse.Windows.CommonWindows
 {
     /// <summary>
@@ -22,6 +29,16 @@ namespace CoffeeHouse.Windows.CommonWindows
         public ProductListWindow()
         {
             InitializeComponent();
+
+            GetProducr();
+        }
+        private void GetProducr()
+        {
+            List<Stuff> stuffList = new List<Stuff>();
+
+            stuffList = Context.Stuff.ToList();
+
+            LvProductList.ItemsSource = stuffList;
         }
     }
 }

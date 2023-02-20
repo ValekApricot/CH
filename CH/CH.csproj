@@ -332,6 +332,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resourses\Images\JpgFormat\1659978602_41-kartinkin-net-p-oboi-kofe-s-molokom-krasivo-49.jpg" />
+    <Resource Include="Resourses\Images\JpgFormat\3ed0c322110c938cc0423c438959be12.jpg" />
     <Resource Include="Resourses\Images\JpgFormat\9178.750x0.jpg" />
     <Resource Include="Resourses\Images\JpgFormat\fonstola.ru_398778.jpg" />
     <Resource Include="Resourses\Images\JpgFormat\1380310295-kofe-ch2--22.jpg" />
