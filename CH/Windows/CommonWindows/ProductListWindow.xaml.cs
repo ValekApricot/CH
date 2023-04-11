@@ -1,4 +1,5 @@
-﻿using CoffeeHouse.DataBase;
+﻿using CoffeeHouse.ClassHelper;
+using CoffeeHouse.DataBase;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,11 +13,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
-
-using CoffeeHouse.ClassHelper;
-using CoffeeHouse.DataBase;
 using static CoffeeHouse.ClassHelper.EFClass;
+using static CoffeeHouse.ClassHelper.AuthUserClass;
+using CoffeeHouse.Windows.ManagerWindows;
 
 
 namespace CoffeeHouse.Windows.CommonWindows
@@ -29,16 +28,24 @@ namespace CoffeeHouse.Windows.CommonWindows
         public ProductListWindow()
         {
             InitializeComponent();
-
-            GetProducr();
+            if (authEmploee.IDPost != 1)
+            {
+                btnAddProduct.Visibility = Visibility.Collapsed;
+            }
+            GetProduct();
         }
-        private void GetProducr()
+        private void GetProduct()
         {
             List<Stuff> stuffList = new List<Stuff>();
-
-            stuffList = Context.Stuff.ToList();
-
+            stuffList = EFClass.Context.Stuff.ToList();
             LvProductList.ItemsSource = stuffList;
+        }
+
+        private void btnAddProduct_Click(object sender, RoutedEventArgs e)
+        {
+            FunctionProduct functionProduct = new FunctionProduct();
+            functionProduct.Show();
+            Close();
         }
     }
 }

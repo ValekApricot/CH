@@ -27,7 +27,7 @@
 
         <StackPanel Margin="10 10 500 0">
             <TextBlock Text="COFFEE HOUSE"
-                       Background="Black"
+                       Background="Transparent"
                        Height="40"
                        FontSize="30"
                        FontWeight="Bold"
@@ -37,7 +37,7 @@
                        Padding="5"/>
 
             <TextBlock Text="Введите Логин:"
-                       Background="Black"
+                       Background="Transparent"
                        Margin="0 30 0 0"
                        Height="40"
                        FontSize="20"
@@ -47,7 +47,7 @@
 
             <TextBox   x:Name="TbLogin"
                        Text="Login"
-                       Background="Black"
+                       Background="Transparent"
                        Margin="0 5"
                        Height="50"
                        FontSize="20"
@@ -60,7 +60,7 @@
 
 
             <TextBlock Text="Введите Пароль:"
-                       Background="Black"
+                       Background="Transparent"
                        Margin="0 30 0 0"
                        Height="40"
                        FontSize="20"
@@ -69,7 +69,7 @@
                        Padding="10"/>
 
             <PasswordBox   x:Name="TbPassword" 
-                           Background="Black"
+                           Background="Transparent"
                            Margin="0 5"
                            Height="50"
                            Foreground="White"
@@ -82,7 +82,7 @@
             <Button
                     x:Name="BtnGo"
                     Height="50"
-                    Background="Black"
+                    Background="Transparent"
                     Content="Войти"
                     FontSize="20"
                     Foreground="White"
@@ -95,12 +95,12 @@
             <Button 
                 x:Name="BtnToReg"
                 Content="Нет аккаунта? Регистрация"
-                   Background="Black"
+                   Background="Transparent"
                    Foreground="White"
                    HorizontalContentAlignment="Center"
                     BorderThickness="1"
                     BorderBrush="Black"
-                   Margin="0 20"
+                   Margin="0 70"
                    Click="BtnToReg_Click"
                    />
 

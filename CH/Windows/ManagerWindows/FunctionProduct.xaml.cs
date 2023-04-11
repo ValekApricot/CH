@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CoffeeHouse.Pages.DirectorPages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,18 +13,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace CoffeeHouse.Windows.ClientWindows
+namespace CoffeeHouse.Windows.ManagerWindows
 {
     /// <summary>
-    /// Логика взаимодействия для DefaultClientWindow.xaml
+    /// Логика взаимодействия для FunctionProduct.xaml
     /// </summary>
-    public partial class DefaultClientWindow : Window
+    public partial class FunctionProduct : Window
     {
-        public DefaultClientWindow()
+        public FunctionProduct()
         {
             InitializeComponent();
+            ProductFrame.Content = new AddProductPage();
         }
-
-      
     }
 }

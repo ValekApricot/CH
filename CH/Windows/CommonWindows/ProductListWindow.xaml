@@ -78,11 +78,32 @@
                                        FontSize="18"
                                        FontWeight="Bold"
                                        Margin="10 0 0 0"/>
+                            
+                            <TextBlock Text="{Binding Category.Title}"
+                                       FontSize="15"
+                                       FontWeight="Bold"
+                                       Margin="10 0 0 0"/>
                         </StackPanel>
                     </Border>
                 </DataTemplate>
             </ListView.ItemTemplate>
-
+ 
         </ListView>
+
+        <Button x:Name="btnAddProduct"
+                Grid.Row="3"
+                Width="50"
+                HorizontalAlignment="Right"
+                FontSize="40"
+                Margin="0 0 30 0"
+                BorderBrush="Transparent"
+                
+                Padding="0 -8 0 0"
+                Click="btnAddProduct_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\4369555.png"/>
+            </Button.Background>
+        </Button>
+
     </Grid>
 </Window>

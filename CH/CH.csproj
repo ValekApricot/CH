@@ -65,6 +65,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClassHelper\AuthUserClass.cs" />
     <Compile Include="ClassHelper\EFClass.cs" />
     <Compile Include="DataBase\Category.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -205,6 +206,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Windows\ManagerWindows\FunctionProduct.xaml.cs">
+      <DependentUpon>FunctionProduct.xaml</DependentUpon>
+    </Compile>
     <Page Include="Pages\CommonPages\AddClientPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -277,6 +281,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\ManagerWindows\FunctionProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -313,7 +321,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resourses\Images\PngFormat\" />
     <Folder Include="Resourses\Objects\" />
     <Folder Include="Resourses\Sounds\Mp3Format\" />
     <Folder Include="Resourses\Sounds\WavFormat\" />
@@ -332,6 +339,9 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resourses\Images\JpgFormat\627d0e65d9da494abaf78cb738190d6d.jpeg" />
+    <Resource Include="Resourses\Images\PngFormat\4369555.png" />
+    <Resource Include="Resourses\Images\PngFormat\3585896.png" />
     <Resource Include="Resourses\Images\JpgFormat\1659978602_41-kartinkin-net-p-oboi-kofe-s-molokom-krasivo-49.jpg" />
     <Resource Include="Resourses\Images\JpgFormat\3ed0c322110c938cc0423c438959be12.jpg" />
     <Resource Include="Resourses\Images\JpgFormat\9178.750x0.jpg" />
