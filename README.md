@@ -49,7 +49,7 @@
 <b>Окно со списком продуктов</b>
 
 
-![image](https://user-images.githubusercontent.com/116540788/220127078-121409fb-bdf8-4c01-8911-7f2dddddf98b.png)
+![image](https://user-images.githubusercontent.com/116540788/231802930-4518966d-0d19-4142-8fae-a7352fdd8553.png)
 
 
 <b>Добавли новый продукт</b>
