@@ -125,8 +125,8 @@
             </ListView>
 
             <Button x:Name="btnBack"
-                Height="29"
-                Width="29"
+                Height="40"
+                Width="40"
                 BorderBrush="Transparent"
                 Foreground="Transparent"               
                 HorizontalAlignment="Right"

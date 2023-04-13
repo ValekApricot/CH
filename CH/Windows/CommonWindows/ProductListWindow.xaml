@@ -12,7 +12,7 @@
         WindowStyle="ToolWindow"
         ResizeMode="NoResize"
         WindowState="Normal">
-    
+
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\JpgFormat\1659978602_41-kartinkin-net-p-oboi-kofe-s-molokom-krasivo-49.jpg"/>
@@ -85,7 +85,7 @@
                                        FontSize="18"
                                        FontWeight="Bold"
                                        Margin="10 0 0 0"/>
-                            
+
                             <TextBlock Text="{Binding Category.Title}"
                                        FontSize="15"
                                        FontWeight="Bold"
@@ -94,17 +94,16 @@
                     </Border>
                 </DataTemplate>
             </ListView.ItemTemplate>
- 
+
         </ListView>
         <Button x:Name="btnBack"
-                Height="20"
-                Width="20"
-                
+                Height="40"
+                Width="40"               
                 BorderBrush="White"
                 Foreground="White"           
                 HorizontalAlignment="Right"
                 VerticalAlignment="Top"
-                Margin="3" Click="btnBack_Click">
+                Margin="0,3,3,0" Click="btnBack_Click">
             <Button.Background>
                 <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\3585896.png"/>
             </Button.Background>

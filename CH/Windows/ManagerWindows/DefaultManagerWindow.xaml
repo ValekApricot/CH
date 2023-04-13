@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         Title="DefaultManagerWindow"
         Height="450"
-        Width="800"
-        
+        Width="800"       
         WindowStyle="ToolWindow"
         ResizeMode="NoResize"
         WindowState="Normal"
         WindowStartupLocation="CenterScreen">
+
+
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\JpgFormat\627d0e65d9da494abaf78cb738190d6d.jpeg"/>
@@ -26,60 +27,50 @@
                    Background="Transparent"
                   BorderBrush="Transparent"
                    Height="40"
-                   Width="400"
-                   Style="{DynamicResource ButtonStyleRedius}"
+                   Width="400"                  
                    Foreground="White"   
                    VerticalAlignment="Top"
-                   FontSize="15"/>
+                   FontSize="20"/>
 
         <Button x:Name="btnBack"
-                Height="20"
-                Width="20"
+                Height="47"
+                Width="48"
                 BorderBrush="Transparent"                             
                 HorizontalAlignment="Right"
                 VerticalAlignment="Top"
-                Margin="3" Click="btnBack_Click">
+                Margin="0,3,3,0" Click="btnBack_Click">
             <Button.Background>
                 <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\3585896.png"/>
             </Button.Background>
         </Button>
 
-        <Button x:Name="btnProductList"
-                Height="50"
-                Width="200"
-                Style="{DynamicResource ButtonStyleRedius}"
+        <Button x:Name="btnProductList"               
                 Background="Transparent"
                 BorderBrush="Transparent"
                 Foreground="White"
-                FontSize="15"
+                FontSize="20"
                 Content="Товары"
                 BorderThickness="2"
-                Margin="300,217,300,167" Click="btnProductList_Click"
+                Margin="555,112,78,252" Click="btnProductList_Click"
                 />
 
-        <Button x:Name="btnEmployeeList"
-                Height="50"
-                Width="200"
-                Style="{DynamicResource ButtonStyleRedius}"
+        <Button x:Name="btnEmployeeList"               
                 Background="Transparent"
                 BorderBrush="Transparent"
                 Foreground="White"
                 Content="Сотрудники"
-                FontSize="15"
+                FontSize="20"
                 BorderThickness="2"
-                Margin="573,126,27,258" Click="btnEmployeeList_Click"
+                Margin="69,112,564,252" Click="btnEmployeeList_Click"
                 />
-        <Button x:Name="btnGuestList"
-                Height="50"
-                Width="200"
-                Style="{DynamicResource ButtonStyleRedius}"
+        <Button x:Name="btnGuestList"                
                 Background="Transparent"
                 BorderBrush="Transparent"
                 Foreground="White"
-                FontSize="15"
+                FontSize="20"
                 Content="Клиенты"
                 BorderThickness="2"
-                Margin="53,120,547,264" Click="btnGuestList_Click"
+                Margin="316,182,316,182" Click="btnGuestList_Click"
                 />
 
 
