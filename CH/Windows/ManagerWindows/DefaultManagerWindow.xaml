@@ -5,65 +5,83 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoffeeHouse.Windows.ManagerWindows"
         mc:Ignorable="d"
-      Title="DefaultManagerWindow"        Height="500" 
-        WindowStartupLocation="CenterScreen"
+        Title="DefaultManagerWindow"
+        Height="450"
+        Width="800"
+        
         WindowStyle="ToolWindow"
         ResizeMode="NoResize"
         WindowState="Normal"
-        Width="800">
+        WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\JpgFormat\627d0e65d9da494abaf78cb738190d6d.jpeg"/>
         </Grid.Background>
 
-        <Button x:Name="btnEmployeeList"
-                Content="Сотрудники"
-                FontSize="20"               
-                BorderBrush="Transparent"
-                Background="Transparent"
-                Foreground="White"
-                HorizontalAlignment="Left"
-                VerticalAlignment="Top"
-                Height="52"
-                Width="173"
-                Margin="594,132,0,0" RenderTransformOrigin="0.527,1.255"/>
-
-        <Button x:Name="btnGuestList"
-                Content="Клиенты"
-                FontSize="20"
-                BorderBrush="Transparent"
-                Background="Transparent" 
-                Foreground="White"
-                HorizontalAlignment="Left"
-                Margin="73,132,0,0" 
-                VerticalAlignment="Top"
-                Height="51"
-                Width="164"/>
-
-        <Button x:Name="btnProductList"
-                Content="Товары"
-                FontSize="20"
-                BorderBrush="Transparent"
-                Background="Transparent"
-                Foreground="White" 
-                HorizontalAlignment="Center" 
-                VerticalAlignment="Top"
-                Height="50"
-                Width="148"
-                Margin="0,242,0,0"
-                Click="btnProductList_Click"/>
 
         <Button x:Name="tbHeaderUser"
                    Content="Name"
                    HorizontalAlignment="Center"
-                   Margin="0,10,0,0"
+                   Margin="10"
                    Background="Transparent"
+                  BorderBrush="Transparent"
                    Height="40"
-                   Width="358"
-                FontSize="20"
-                   BorderBrush="Transparent"
-                   Foreground="White"
+                   Width="400"
+                   Style="{DynamicResource ButtonStyleRedius}"
+                   Foreground="White"   
                    VerticalAlignment="Top"
-                   />
+                   FontSize="15"/>
+
+        <Button x:Name="btnBack"
+                Height="20"
+                Width="20"
+                BorderBrush="Transparent"                             
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="3" Click="btnBack_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\3585896.png"/>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="btnProductList"
+                Height="50"
+                Width="200"
+                Style="{DynamicResource ButtonStyleRedius}"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Foreground="White"
+                FontSize="15"
+                Content="Товары"
+                BorderThickness="2"
+                Margin="300,217,300,167" Click="btnProductList_Click"
+                />
+
+        <Button x:Name="btnEmployeeList"
+                Height="50"
+                Width="200"
+                Style="{DynamicResource ButtonStyleRedius}"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Foreground="White"
+                Content="Сотрудники"
+                FontSize="15"
+                BorderThickness="2"
+                Margin="573,126,27,258" Click="btnEmployeeList_Click"
+                />
+        <Button x:Name="btnGuestList"
+                Height="50"
+                Width="200"
+                Style="{DynamicResource ButtonStyleRedius}"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Foreground="White"
+                FontSize="15"
+                Content="Клиенты"
+                BorderThickness="2"
+                Margin="53,120,547,264" Click="btnGuestList_Click"
+                />
+
+
     </Grid>
 </Window>

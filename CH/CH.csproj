@@ -199,6 +199,12 @@
     <Compile Include="Windows\DirectorWindows\DefaultDirectorWindow.xaml.cs">
       <DependentUpon>DefaultDirectorWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\DirectorWindows\EmploeeListWindow.xaml.cs">
+      <DependentUpon>EmploeeListWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DirectorWindows\GuestListWindow.xaml.cs">
+      <DependentUpon>GuestListWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\ManagerWindows\DefaultManagerWindow.xaml.cs">
       <DependentUpon>DefaultManagerWindow.xaml</DependentUpon>
     </Compile>
@@ -277,6 +283,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Windows\DirectorWindows\EmploeeListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DirectorWindows\GuestListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\ManagerWindows\DefaultManagerWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -339,6 +353,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resourses\Images\JpgFormat\1645308068_30-phonoteka-org-p-fon-dlya-kofeinogo-menyu-33.png" />
     <Resource Include="Resourses\Images\JpgFormat\627d0e65d9da494abaf78cb738190d6d.jpeg" />
     <Resource Include="Resourses\Images\PngFormat\4369555.png" />
     <Resource Include="Resourses\Images\PngFormat\3585896.png" />

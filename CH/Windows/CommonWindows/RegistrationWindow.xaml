@@ -8,7 +8,9 @@
         ResizeMode="NoResize"
         WindowStyle="ToolWindow"
         WindowStartupLocation="CenterScreen"
-        Title="MainChoiseWindow" Height="900" Width="800">
+        Title="MainChoiseWindow" 
+        Height="900"
+        Width="800">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="D:\CoffeeHouse\CoffeeHouse\Resourses\Images\JpgFormat\fonstola.ru_398778.jpg"/>

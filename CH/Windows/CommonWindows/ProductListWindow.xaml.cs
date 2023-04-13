@@ -17,7 +17,6 @@ using static CoffeeHouse.ClassHelper.EFClass;
 using static CoffeeHouse.ClassHelper.AuthUserClass;
 using CoffeeHouse.Windows.ManagerWindows;
 
-
 namespace CoffeeHouse.Windows.CommonWindows
 {
     /// <summary>
@@ -45,6 +44,13 @@ namespace CoffeeHouse.Windows.CommonWindows
         {
             FunctionProduct functionProduct = new FunctionProduct();
             functionProduct.Show();
+            Close();
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            DefaultManagerWindow defaultManagerWindow = new DefaultManagerWindow();
+            defaultManagerWindow.Show();
             Close();
         }
     }

@@ -5,7 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoffeeHouse.Windows.CommonWindows"
         mc:Ignorable="d"
-        Title="ProductListWindow" Height="500" Width="800">
+        Title="ProductListWindow"
+        Height="500"
+        Width="800"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow"
+        ResizeMode="NoResize"
+        WindowState="Normal">
+    
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\JpgFormat\1659978602_41-kartinkin-net-p-oboi-kofe-s-molokom-krasivo-49.jpg"/>
@@ -89,6 +96,19 @@
             </ListView.ItemTemplate>
  
         </ListView>
+        <Button x:Name="btnBack"
+                Height="20"
+                Width="20"
+                
+                BorderBrush="White"
+                Foreground="White"           
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Margin="3" Click="btnBack_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\3585896.png"/>
+            </Button.Background>
+        </Button>
 
         <Button x:Name="btnAddProduct"
                 Grid.Row="3"

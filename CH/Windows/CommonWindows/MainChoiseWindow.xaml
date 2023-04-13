@@ -8,7 +8,8 @@
         ResizeMode="NoResize"
         WindowStyle="ToolWindow"
         WindowStartupLocation="CenterScreen"
-        Title="MainChoiseWindow" Height="700" Width="400">
+        Title="MainChoiseWindow"
+        Height="700" Width="400">
     <Grid>
     </Grid>
 </Window>
