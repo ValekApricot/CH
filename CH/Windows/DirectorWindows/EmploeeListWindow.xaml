@@ -85,35 +85,51 @@
                                     <TextBlock Text="{Binding FullName}"
                                        FontSize="10"
                                        TextWrapping="Wrap"
-                                       FontFamily="Times New Roman"
+                                       FontStyle="Italic"
+                           
+                           FontFamily="Times New Roman"
                                        Margin="10 0 0 0"/>
                                     <TextBlock Text="{Binding Phone}"
                                        FontSize="10"
-                                       FontFamily="Times New Roman"
+                                       FontStyle="Italic"
+                           
+                           FontFamily="Times New Roman"
                                        Margin="10 0 0 0"/>
                                     <TextBlock Text="{Binding Gender.Gender1}"
                                        FontSize="10"
-                                       FontFamily="Times New Roman"
+                                      FontStyle="Italic"
+                           
+                           FontFamily="Times New Roman"
                                        Margin="10 0 0 0"/>
                                     <TextBlock Text="{Binding Birthday}"
                                        FontSize="10"
-                                       FontFamily="Times New Roman"
+                                       FontStyle="Italic"
+                           
+                           FontFamily="Times New Roman"
                                        Margin="10 0 0 0"/>
                                     <TextBlock Text="{Binding Email}"
                                        FontSize="10"
-                                       FontFamily="Times New Roman"
+                                       FontStyle="Italic"
+                           
+                           FontFamily="Times New Roman"
                                        Margin="10 0 0 0"/>
                                     <TextBlock Text="{Binding PersonalCode}"
                                        FontSize="10"
-                                       FontFamily="Times New Roman"
+                                       FontStyle="Italic"
+                           
+                           FontFamily="Times New Roman"
                                        Margin="10 0 0 0"/>
                                     <TextBlock Text="{Binding Login}"
                                        FontSize="10"
-                                       FontFamily="Times New Roman"
+                                       FontStyle="Italic"
+                           
+                           FontFamily="Times New Roman"
                                        Margin="10 0 0 0"/>
                                     <TextBlock Text="{Binding Post.Title}"
                                        FontSize="10"
-                                       FontFamily="Times New Roman"
+                                       FontStyle="Italic"
+                           
+                           FontFamily="Times New Roman"
                                        Margin="10 0 0 0"/>
                                 </StackPanel>
                             </StackPanel>
