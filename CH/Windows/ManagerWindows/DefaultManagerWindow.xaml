@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoffeeHouse.Windows.ManagerWindows"
         mc:Ignorable="d"
-        Title="DefaultManagerWindow"
+        Title="Главное меню"
         Height="450"
         Width="800"       
         WindowStyle="ToolWindow"
