@@ -25,7 +25,7 @@
 <b>Окно Регистрации</b>
 
 
-![image](https://user-images.githubusercontent.com/116540788/220070274-170fa8ef-6b35-4889-a0d7-ec0c05623d27.png)
+![image](https://user-images.githubusercontent.com/116540788/231801808-fd9f25f7-3d16-45ac-947a-be6608f638d8.png)
 
 
 <b>Добавление данных после регистрации в БД</b>
