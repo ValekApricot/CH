@@ -9,8 +9,7 @@
         Height="500"
         Width="800"
         WindowStartupLocation="CenterScreen"
-        WindowStyle="ToolWindow"
-        ResizeMode="NoResize"
+        
         WindowState="Normal">
 
     <Grid>
