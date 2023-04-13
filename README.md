@@ -19,7 +19,7 @@
 <b>Окно Авторизации</b>
 
 
-![image](https://user-images.githubusercontent.com/116540788/220070124-c51bc499-2d26-4507-8ca8-a4d76e0960aa.png)
+![image](https://user-images.githubusercontent.com/116540788/231801336-d03f5e00-78b4-46bc-97c1-5952d0cff79e.png)
 
 
 <b>Окно Регистрации</b>
@@ -80,4 +80,8 @@
 ![image](https://user-images.githubusercontent.com/116540788/231751329-f12ff064-489a-4707-aa00-5c4b0bd12523.png)
 
 
+![image](https://user-images.githubusercontent.com/116540788/231801003-cb924472-7c3e-42de-aea1-c2009ed70ad5.png)
+
+
+![image](https://user-images.githubusercontent.com/116540788/231801463-3d7f504a-3994-4bf2-ab3b-2d63669c0735.png)
 
