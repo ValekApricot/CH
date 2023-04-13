@@ -13,18 +13,24 @@
             <ImageBrush/>
         </Grid.Background>
         <StackPanel Margin="10 10 500 0">
-            <TextBlock Text="Регистрация"
-                       Background="Black"
+            <TextBlock Text="Регистрация"                      
                        Height="50"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                        FontSize="30"
                        Foreground="White"
                        TextAlignment="Center"
                        
                        Padding="5"/>
 
-            <TextBlock Text="*Введите Имя:"
-                       Background="Black"
+            <TextBlock Text="*Введите Имя:"                     
                        Margin="0 3 0 0"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                        Height="30"
                        FontSize="20"
                        Foreground="White"
@@ -32,7 +38,10 @@
                        Padding="00"/>
 
             <TextBox   x:Name="TbName"  
-                           Background="Black"
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                            Margin="0 5"
                            Height="40"
                            FontSize="17"
@@ -45,7 +54,10 @@
                        LostFocus="TbLostFocus"/>
 
             <TextBlock Text="*Введите логин:"
-                       Background="Black"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                        Margin="0 3 0 0"
                        Height="30"
                        FontSize="20"
@@ -55,7 +67,10 @@
 
             <TextBox   x:Name="TbLogin"
                        Text="Login"
-                       Background="Black"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                        GotFocus="TbGotFocus"
                        LostFocus="TbLostFocus"
                        Margin="0 5"
@@ -68,7 +83,10 @@
 
 
             <TextBlock Text="*Введите пароль:"
-                       Background="Black"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                        Margin="0 3 0 0"
                        Height="30"
                        FontSize="20"
@@ -80,7 +98,10 @@
                            
                        GotFocus="TbGotFocus"
                        LostFocus="TbLostFocus"
-                           Background="Black"
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                            Margin="0 5"
                            Height="40"
                            FontSize="20"
@@ -91,7 +112,10 @@
                            HorizontalContentAlignment="Left"/>
 
             <TextBlock Text="*Повторите пароль:"
-                       Background="Black"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                        Margin="0 3 0 0"
                        Height="30"
                        FontSize="20"
@@ -103,7 +127,10 @@
                            
                        GotFocus="TbGotFocus"
                        LostFocus="TbLostFocus"
-                           Background="Black"
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                            Margin="0 5"
                            Height="40"
                            FontSize="20"
@@ -114,7 +141,10 @@
                            HorizontalContentAlignment="Left"/>
 
             <TextBlock Text="*Введите номер телефона:"
-                       Background="Black"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                        Margin="0 3 0 0"
                        Height="30"
                        FontSize="18"
@@ -126,7 +156,10 @@
                            
                        GotFocus="TbGotFocus"
                        LostFocus="TbLostFocus"
-                           Background="Black"
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                            Margin="0 5"
                            Height="40"
                        Padding="5" 
@@ -137,7 +170,10 @@
                            HorizontalContentAlignment="Left"/>
 
             <TextBlock Text="Введите Email:"
-                       Background="Black"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                        Margin="0 3 0 0"
                        Height="30"
                        FontSize="20"
@@ -149,20 +185,24 @@
                            
                        GotFocus="TbGotFocus"
                        LostFocus="TbLostFocus"
-                           Background="Black"
-                           Margin="0 5"
-                           
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                           Margin="0 5"                         
                            FontSize="20"
                        Height="40"
-                       Padding="5" 
-                       
+                       Padding="5"                        
                            Foreground="White"
                            BorderThickness="0"
                            Text="Velick567p@mail.ru"
                            HorizontalContentAlignment="Left"/>
 
             <TextBlock Text="Введите День рождения:"
-                       Background="Black"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                        Margin="0 3 0 0"
                        Height="30"
                        FontSize="20"
@@ -170,9 +210,11 @@
                        TextAlignment="Left"
                        Padding="00"/>
 
-            <DatePicker   x:Name="DpBirthday"
-                           
-                           Background="Black"
+            <DatePicker   x:Name="DpBirthday"                         
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                            Margin="0 5"
                            Height="40"
                        Padding="5" 
@@ -182,7 +224,10 @@
                            HorizontalContentAlignment="Left"
                           />
             <TextBlock Text="*Выберете пол:"
-                       Background="Black"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                        Margin="0 3 0 0"
                        Height="30"
                        FontSize="20"
@@ -208,9 +253,12 @@
                     x:Name="BtnGo"
                     Height="30"
                     Margin="30 10 30 0"
-                    Background="Black"
                     Content="Зарегестрироваться"
                     FontSize="17"
+                Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                     Foreground="White"
                     BorderThickness="1"
                  BorderBrush="Black"
@@ -219,7 +267,10 @@
 
             <Button x:Name="BtnToAuth"
                 Content="К окну авторизации"
-                   Background="Black"
+                   Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                    Foreground="White"
                    HorizontalContentAlignment="Center"
                     BorderThickness="1"
