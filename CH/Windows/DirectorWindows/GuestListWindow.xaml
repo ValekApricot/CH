@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoffeeHouse.Windows.DirectorWindows"
         mc:Ignorable="d"
-        Title="GuestListWindow" 
+        Title="Список Клиентов" 
         Height="450"
         Width="800"
         WindowStartupLocation="CenterScreen"
@@ -49,8 +49,9 @@
                         BorderBrush="Transparent"
                         Background="White"
                         BorderThickness="1"
-                        Margin="5"
-                        Width="230"
+                        
+                        Margin="30 20 0 0"
+                        Width="200"
                         Height="150">
                         <StackPanel Orientation="Horizontal">
                             <StackPanel Margin=" 20 10 0 0">
@@ -154,7 +155,7 @@
                 Foreground="Transparent"               
                 HorizontalAlignment="Right"
                 VerticalAlignment="Top"
-                Margin="0,3,10,0" 
+                Margin="0,0,26,0" 
                 Click="btnBack_Click">
             <Button.Background>
                 <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\3585896.png"/>

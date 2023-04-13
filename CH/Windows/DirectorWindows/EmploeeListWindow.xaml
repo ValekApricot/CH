@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoffeeHouse.Windows.DirectorWindows"
         mc:Ignorable="d"
-        Title="EmploeeListWindow"
+        Title="Список Сотрудников"
         Height="450"
         Width="800"
         WindowStartupLocation="CenterScreen"
@@ -22,7 +22,7 @@
                   d:ItemsSource="{d:SampleData ItemCount=5}"
                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                   Background="Transparent"
-                  Margin="50 0 0 0">
+                  Margin="100 0 0 0">
 
                 <ListView.ItemsPanel>
                     <ItemsPanelTemplate>
@@ -35,8 +35,8 @@
                         BorderBrush="Transparent"
                         Background="White"
                         BorderThickness="1"
-                        Margin="5"
-                        Width="300"
+                        Margin="30 20 0 0"
+                        Width="250"
                         Height="140">
                             <StackPanel Orientation="Horizontal">
                                 <StackPanel Margin="20 10 0 0">

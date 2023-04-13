@@ -8,7 +8,7 @@
         ResizeMode="NoResize"
         WindowStyle="ToolWindow"
         WindowStartupLocation="CenterScreen"
-        Title="MainChoiseWindow" 
+        Title="Регистрация" 
         Height="900"
         Width="800">
     <Grid>
