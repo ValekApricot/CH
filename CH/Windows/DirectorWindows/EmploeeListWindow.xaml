@@ -13,11 +13,43 @@
         WindowState="Normal">
     
     <Grid>
+
+        
+           
+        
         <Grid.Background>
                 <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\JpgFormat\1645308068_30-phonoteka-org-p-fon-dlya-kofeinogo-menyu-33.png"/>
             </Grid.Background>
+        <StackPanel Width="100" 
+                    
+                    HorizontalAlignment="Left">
+            <Button x:Name="AddEmployee"
+                    Margin="0 150 0 0"                  
+                    BorderBrush="Transparent"
+                    Content="Добавить"
+                    Background="Transparent"
+                    Foreground="White"    
+                    FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                    Click="AddEmployee_Click"
+                    FontSize="20" Height="39"/>
 
-            <ListView x:Name="LvEmployeeList"
+        <Button x:Name="ChangeEmployee"
+                    FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                    Margin="0 20 0 0"
+                    FontSize="20"
+                BorderBrush="Transparent"
+                    Content="Изменить"
+                    Background="Transparent"
+                    Foreground="White"
+                     Click="ChangeEmployee_Click" Height="50"/>
+
+        </StackPanel>
+        
+        <ListView x:Name="LvEmployeeList"
                   d:ItemsSource="{d:SampleData ItemCount=5}"
                   ScrollViewer.HorizontalScrollBarVisibility="Disabled"
                   Background="Transparent"

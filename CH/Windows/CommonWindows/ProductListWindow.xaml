@@ -106,7 +106,7 @@
         <Button x:Name="btnBack"
                 Height="40"
                 Width="40"               
-                BorderBrush="White"
+                BorderBrush="Transparent"
                 Foreground="White"           
                 HorizontalAlignment="Right"
                 VerticalAlignment="Top"
