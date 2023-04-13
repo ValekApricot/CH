@@ -238,7 +238,10 @@
             <ComboBox
                       x:Name="CbGender"
                            SelectedIndex="1"
-                           Background="Black"
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                            Margin="0 5"
                            Height="30"
                 FontSize="20"
@@ -261,7 +264,7 @@
                            FontFamily="Times New Roman"
                     Foreground="White"
                     BorderThickness="1"
-                 BorderBrush="Black"
+                 BorderBrush="Transparent"
                     Click="BtnGo_Click"/>
 
 
@@ -274,7 +277,7 @@
                    Foreground="White"
                    HorizontalContentAlignment="Center"
                     BorderThickness="1"
-                    BorderBrush="Black"
+                    BorderBrush="Transparent"                   
                    Margin="30 10"
                    
                    />
