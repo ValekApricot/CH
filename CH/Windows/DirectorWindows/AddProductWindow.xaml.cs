@@ -1,7 +1,9 @@
-﻿using System;
+﻿using CoffeeHouse.ClassHelper;
+using CoffeeHouse.DataBase;
+using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -11,24 +13,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using CoffeeHouse.ClassHelper;
-using CoffeeHouse.DataBase;
-using Microsoft.Win32;
 using System.IO;
-using CoffeeHouse.Windows.ManagerWindows;
-using CoffeeHouse.Windows.CommonWindows;
 
-namespace CoffeeHouse.Pages.DirectorPages
+namespace CoffeeHouse.Windows.DirectorWindows
 {
     /// <summary>
-    /// Логика взаимодействия для AddProductPage.xaml
+    /// Логика взаимодействия для AddProductWindow.xaml
     /// </summary>
-    public partial class AddProductPage : Page
+    public partial class AddProductWindow : Window
     {
         private string pathPhoto = null;
-        public AddProductPage()
+        public AddProductWindow()
         {
             InitializeComponent();
             CMBTypeProduct.ItemsSource = EFClass.Context.Category.ToList();
@@ -47,7 +43,7 @@ namespace CoffeeHouse.Pages.DirectorPages
             {
                 MessageBox.Show("Цена указана не верно");
                 return;
-            }            
+            }
             product.IDCategory = (CMBTypeProduct.SelectedItem as Category).IDCategory;
             if (pathPhoto != null)
             {
@@ -72,10 +68,10 @@ namespace CoffeeHouse.Pages.DirectorPages
                 {
                     MessageBox.Show("Дата указана не верно");
                     return;
-                }               
+                }
             }
 
-            if (TbExpiration.Text=="")
+            if (TbExpiration.Text == "")
             {
                 product.ExpirationDate = null;
             }
@@ -84,8 +80,8 @@ namespace CoffeeHouse.Pages.DirectorPages
             {
                 MessageBox.Show("Все поля с * должны быть заполнены");
                 return;
-            }            
-            
+            }
+
             EFClass.Context.Stuff.Add(product);
             EFClass.Context.SaveChanges();
             MessageBox.Show("Продукт добавлен");
@@ -107,10 +103,8 @@ namespace CoffeeHouse.Pages.DirectorPages
                 {
                     MessageBox.Show("Изоображение имеет неверный формат");
                 }
-                
+
             }
         }
-
-       
     }
 }

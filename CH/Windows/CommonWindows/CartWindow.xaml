@@ -1,22 +1,22 @@
-﻿<Window x:Class="CoffeeHouse.Windows.CommonWindows.ProductListWindow"
+﻿<Window x:Class="CoffeeHouse.Windows.CommonWindows.CartWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoffeeHouse.Windows.CommonWindows"
         mc:Ignorable="d"
-        Title="Список товаров"
+        Title="CartWindow"  
         Height="500"
         Width="800"
         WindowStartupLocation="CenterScreen"
         
         WindowState="Normal">
-
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\JpgFormat\1659978602_41-kartinkin-net-p-oboi-kofe-s-molokom-krasivo-49.jpg"/>
         </Grid.Background>
         <Grid.RowDefinitions>
+
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
@@ -27,11 +27,11 @@
                 Height="40"
                 Width="40"
                 BorderBrush="Transparent"
-                Foreground="Transparent"               
+                Foreground="Transparent"
+                
                 HorizontalAlignment="Right"
                 VerticalAlignment="Top"
-                Margin="3" Click="btnBack_Click"
-                >
+                Margin="3" Click="btnBack_Click">
             <Button.Background>
                 <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\3585896.png"/>
             </Button.Background>
@@ -42,7 +42,8 @@
                    FontSize="40"
                    FontStyle="Italic"
                            FontWeight="DemiBold"
-                           FontFamily="Times New Roman"/>
+                           FontFamily="Times New Roman"
+                   />
 
         <ListView x:Name="LvProductList"
                   Grid.Row="2" d:ItemsSource="{d:SampleData ItemCount=5}"
@@ -66,8 +67,8 @@
                         BorderBrush="Black"
                         BorderThickness="1"
                         Margin="5"
-                        Width="200"
-                        Height="250">
+                        Width="250"
+                        Height="350">
                         <StackPanel>
 
                             <StackPanel>
@@ -85,30 +86,59 @@
 
                                 </Image>
                                 <TextBlock Text="{Binding Title}"
-                                           FontSize="10"
+                                           FontSize="18"
+                                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                                            TextWrapping="Wrap"
-                                           FontWeight="Bold"
+                                           
                                            Margin="10 0 0 0"/>
                                 <TextBlock Text="{Binding Price}"
-                                           FontSize="10"
-                                           FontWeight="Bold"
+                                           FontSize="18"
+                                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                                           
                                            Margin="10 0 0 0"/>
                                 <TextBlock Text="{Binding Category.Title}"
-                                           FontSize="10"
-                                           FontWeight="Bold"
+                                           FontSize="18"
+                                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                                           
+                                       
                                            Margin="10 0 0 0"/>
                             </StackPanel>
-                            <StackPanel Margin="5 5 0 0">
-                                <Button x:Name="btnAddToCart"
+                            <StackPanel Margin="15 5 0 0" Orientation="Horizontal">
+                                <TextBlock x:Name="tbQuantityStuff"
+                                            Height="30"
+                                    Width="30"
+                                    HorizontalAlignment="Left"
+                                    Text="{Binding Quantity}"
+                                    FontSize="18"/>
+                                <Button x:Name="btnRemoveOnCart"
                                     Height="30"
                                     Width="30"
                                     HorizontalAlignment="Left"
                                     BorderBrush="Transparent"
-                                    FontSize="20" Click="btnAddToCart_Click">
+                                    FontSize="20" Click="btnRemoveOnCart_Click">
+                                    <Button.Background>
+                                        <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\png-transparent-minus-ios-glyphs-icon.png"/>
+                                    </Button.Background>
+                                </Button>
+
+                                <Button x:Name="btnAddOnCart"
+                                    Height="30"
+                                    Width="30"
+                                        Margin="5 0 0 0"
+                                    HorizontalAlignment="Left"
+                                    BorderBrush="Transparent"
+                                    FontSize="20" Click="btnAddOnCart_Click">
                                     <Button.Background>
                                         <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\png-transparent-computer-icons-symbol-addition-plus-and-minus-signs-plus-miscellaneous-logo-plus.png"/>
                                     </Button.Background>
                                 </Button>
+
                             </StackPanel>
 
                         </StackPanel>
@@ -118,44 +148,6 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button x:Name="btnAddProduct"
-                Grid.Row="3"
-                Width="50"
-                BorderBrush="Transparent"
-                HorizontalAlignment="Right"
-                FontSize="40"
-                Margin="0 0 10 0"              
-                Padding="0 0 0 0"
-                Click="btnAddProduct_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\4369555.png"/>
-            </Button.Background>
-        </Button>
 
-        <Button x:Name="btnChangeProduct"
-                Grid.Row="3"
-                Width="50"
-                Background="White"
-                HorizontalAlignment="Right"
-                BorderBrush="Transparent"
-                FontSize="20"
-                Margin="0 0 200 0"
-                Content="GG"
-                Padding="0 0 0 0"
-                Click="btnChangeProduct_Click"/>
-
-        <Button x:Name="btnGoToCart"
-                Grid.Row="3"
-                Width="50"               
-                BorderBrush="Transparent"
-                HorizontalAlignment="Left"
-                FontSize="20"
-                Margin="680 0 0 0"               
-                Padding="0 0 0 0"
-                Click="btnGoToCart_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\icons8-shopping-cart-30.png"/>
-            </Button.Background>
-        </Button>
     </Grid>
 </Window>
