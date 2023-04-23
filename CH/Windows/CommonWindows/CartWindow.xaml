@@ -37,7 +37,7 @@
             </Button.Background>
         </Button>
 
-        <TextBlock Text="Список товаров"
+        <TextBlock Text="Корзина"
                    HorizontalAlignment="Center"
                    FontSize="40"
                    FontStyle="Italic"
