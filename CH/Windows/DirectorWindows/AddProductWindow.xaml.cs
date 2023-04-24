@@ -115,5 +115,7 @@ namespace CoffeeHouse.Windows.DirectorWindows
             productListWindow.Show();
             Close();
         }
+
+
     }
 }

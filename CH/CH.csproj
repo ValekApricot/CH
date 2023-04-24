@@ -376,6 +376,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resourses\Images\PngFormat\png-clipart-computer-icons-shopping-happiness-customer-miscellaneous-hand.png" />
+    <Resource Include="Resourses\Images\PngFormat\photo.png" />
     <Resource Include="Resourses\Images\PngFormat\png-clipart-computer-icons-writing-editing-others-miscellaneous-angle.png" />
     <Resource Include="Resourses\Images\PngFormat\png-transparent-computer-icons-symbol-addition-plus-and-minus-signs-plus-miscellaneous-logo-plus.png" />
     <Resource Include="Resourses\Images\PngFormat\png-transparent-minus-ios-glyphs-icon.png" />
