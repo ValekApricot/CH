@@ -124,11 +124,11 @@
                 BorderBrush="Transparent"
                 HorizontalAlignment="Right"
                 FontSize="40"
-                Margin="0 0 10 0"              
+                Margin="0 0 70 0"              
                 Padding="0 0 0 0"
-                Click="btnAddProduct_Click">
+                Click="btnAddProduct_Click"> 
             <Button.Background>
-                <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\4369555.png"/>
+                <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\png-clipart-computer-icons-writing-editing-others-miscellaneous-angle.png"/>
             </Button.Background>
         </Button>
 
@@ -138,11 +138,11 @@
                 HorizontalAlignment="Right"
                 BorderBrush="Transparent"
                 FontSize="20"
-                Margin="0 0 130 0"               
+                Margin="0 0 10 0"               
                 Padding="0 0 0 0"
                 Click="btnChangeProduct_Click">
             <Button.Background>
-                <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\png-clipart-computer-icons-writing-editing-others-miscellaneous-angle.png"/>
+                <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\4369555.png"/>
             </Button.Background>
         </Button>
 
@@ -152,7 +152,7 @@
                 BorderBrush="Transparent"
                 HorizontalAlignment="Left"
                 FontSize="20"
-                Margin="680 0 0 0"               
+                Margin="620 0 0 0"               
                 Padding="0 0 0 0"
                 Click="btnGoToCart_Click">
             <Button.Background>
