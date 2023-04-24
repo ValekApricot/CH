@@ -138,7 +138,7 @@
                 HorizontalAlignment="Right"
                 BorderBrush="Transparent"
                 FontSize="20"
-                Margin="0 0 10 0"               
+                Margin="0 0 5 0"               
                 Padding="0 0 0 0"
                 Click="btnChangeProduct_Click">
             <Button.Background>
