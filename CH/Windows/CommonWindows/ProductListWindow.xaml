@@ -124,7 +124,7 @@
                 BorderBrush="Transparent"
                 HorizontalAlignment="Right"
                 FontSize="40"
-                Margin="0 0 70 0"              
+                Margin="0 0 75 0"              
                 Padding="0 0 0 0"
                 Click="btnAddProduct_Click"> 
             <Button.Background>
@@ -152,7 +152,7 @@
                 BorderBrush="Transparent"
                 HorizontalAlignment="Left"
                 FontSize="20"
-                Margin="620 0 0 0"               
+                Margin="600 0 0 0"               
                 Padding="0 0 0 0"
                 Click="btnGoToCart_Click">
             <Button.Background>
