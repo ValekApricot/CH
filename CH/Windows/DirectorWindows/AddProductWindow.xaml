@@ -16,11 +16,16 @@
 
 
             <TextBlock Text="Добавление товара" 
-                       FontSize="30" 
+                       FontSize="35" 
+                       Margin="0 20 0 0"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                        TextAlignment="Center" 
                        Foreground="Black"/>
 
-            <Border BorderBrush="Gray"
+            <Border BorderBrush="Black"
+                    Margin=" 0 20 0 0 "
                     BorderThickness="1"
                     Width="200"
                     Height="200">
@@ -29,14 +34,23 @@
 
             <Button x:Name="BtnChooseImage" 
                     Content="Выбрать фото"
-                    Width="200"
+                    Width="200"                    
+                    Background="Transparent"
+                    BorderBrush="Transparent"
                     Height="40"
+                    FontSize="20"
                     Margin="5"
+                    FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                     Click="BtnChooseImage_Click"/>
 
             <TextBlock Height="30"
                        Text="*Введите название товара"
                        FontSize="20"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                        TextAlignment="Left"
                        Foreground="Black"
                        Margin="0 0 0 0 "/>
@@ -49,6 +63,9 @@
             <TextBlock
                 Height="30"
                 FontSize="20"
+                FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                 TextAlignment="Left"
                 Foreground="Black"
                 Text="*Введите цену товара"
@@ -64,6 +81,9 @@
             <TextBlock
                 Height="30"
                 FontSize="20"
+                FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                 TextAlignment="Left"
                 Foreground="Black"
                 Text="Введите Срок годности товара"
@@ -79,6 +99,9 @@
             <TextBlock Height="30"
                        Text="*Выберите тип товара"
                        FontSize="20"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                        TextAlignment="Left"
                        Foreground="Black"
                        Margin="0 0 0 0 "/>
@@ -94,6 +117,9 @@
                     Height="50"
                     FontSize="30"
                     Width="200"
+                    FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
                     Margin="0 40 0 0 " 
                     HorizontalAlignment="Center"
                     Content="Добавить"
@@ -106,5 +132,18 @@
 
 
         </StackPanel>
+        <Button x:Name="btnBack"
+            Height="40"
+            Width="40"
+            BorderBrush="Transparent"
+            Foreground="Transparent"               
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Margin="0,3,0,0" Click="btnBack_Click">
+
+            <Button.Background>
+                <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\3585896.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
