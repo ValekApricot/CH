@@ -177,9 +177,6 @@
     <Compile Include="Pages\DirectorPages\RemoveProductPage.xaml.cs">
       <DependentUpon>RemoveProductPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\DirectorPages\StatisticsPage.xaml.cs">
-      <DependentUpon>StatisticsPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Windows\CommonWindows\AutorizationWindow.xaml.cs">
       <DependentUpon>AutorizationWindow.xaml</DependentUpon>
     </Compile>
@@ -262,10 +259,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\DirectorPages\RemoveProductPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\DirectorPages\StatisticsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -383,6 +376,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resourses\Images\PngFormat\png-clipart-computer-icons-writing-editing-others-miscellaneous-angle.png" />
     <Resource Include="Resourses\Images\PngFormat\png-transparent-computer-icons-symbol-addition-plus-and-minus-signs-plus-miscellaneous-logo-plus.png" />
     <Resource Include="Resourses\Images\PngFormat\png-transparent-minus-ios-glyphs-icon.png" />
     <Resource Include="Resourses\Images\PngFormat\icons8-shopping-cart-30.png" />

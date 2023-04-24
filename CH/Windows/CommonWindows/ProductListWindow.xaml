@@ -135,14 +135,16 @@
         <Button x:Name="btnChangeProduct"
                 Grid.Row="3"
                 Width="50"
-                Background="White"
                 HorizontalAlignment="Right"
                 BorderBrush="Transparent"
                 FontSize="20"
-                Margin="0 0 200 0"
-                Content="GG"
+                Margin="0 0 130 0"               
                 Padding="0 0 0 0"
-                Click="btnChangeProduct_Click"/>
+                Click="btnChangeProduct_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\PngFormat\png-clipart-computer-icons-writing-editing-others-miscellaneous-angle.png"/>
+            </Button.Background>
+        </Button>
 
         <Button x:Name="btnGoToCart"
                 Grid.Row="3"
