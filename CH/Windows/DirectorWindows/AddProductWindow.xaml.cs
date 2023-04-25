@@ -15,7 +15,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
-using CoffeeHouse.Windows.ManagerWindows;
 using CoffeeHouse.Windows.CommonWindows;
 
 namespace CoffeeHouse.Windows.DirectorWindows
@@ -115,7 +114,5 @@ namespace CoffeeHouse.Windows.DirectorWindows
             productListWindow.Show();
             Close();
         }
-
-
     }
 }

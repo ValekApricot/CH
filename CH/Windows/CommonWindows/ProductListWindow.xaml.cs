@@ -19,8 +19,6 @@ using static CoffeeHouse.ClassHelper.CartClass;
 using CoffeeHouse.Windows.ManagerWindows;
 using CoffeeHouse.Windows.DirectorWindows;
 using CoffeeHouse.Windows.ClientWindows;
-using CoffeeHouse.Pages.DirectorPages;
-using CoffeeHouse.Windows.Director;
 
 namespace CoffeeHouse.Windows.CommonWindows
 {
@@ -62,8 +60,8 @@ namespace CoffeeHouse.Windows.CommonWindows
 
         private void btnChangeProduct_Click(object sender, RoutedEventArgs e)
         {
-            DefaultDirectorWindow defaultDirectorWindow = new DefaultDirectorWindow();
-            defaultDirectorWindow.Show();
+            ChangeStuffWindow changeStuffWindow = new ChangeStuffWindow();
+            changeStuffWindow.Show();
             Close();
         }
 

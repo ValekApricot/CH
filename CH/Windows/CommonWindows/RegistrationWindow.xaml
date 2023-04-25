@@ -9,18 +9,287 @@
         WindowStyle="ToolWindow"
         WindowStartupLocation="CenterScreen"
         Title="Регистрация" 
-        Height="900"
+        Height="850"
         Width="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="D:\CoffeeHouse\CoffeeHouse\Resourses\Images\JpgFormat\fonstola.ru_398778.jpg"/>
+            <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\JpgFormat\1659978602_41-kartinkin-net-p-oboi-kofe-s-molokom-krasivo-49.jpg"/>
         </Grid.Background>
 
-        <Rectangle Stroke="Black"
-                   StrokeThickness="10"/>
-        <Frame Margin="20"
-               x:Name="FrameRegistration"
-               NavigationUIVisibility="Hidden"
-               />
+        <StackPanel Margin="0 0 500 0">
+            <TextBlock Text="Регистрация"                      
+                       Height="50"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                       FontSize="30"
+                       Foreground="Black"
+                       TextAlignment="Center"
+                       
+                       Padding="5"/>
+
+            <TextBlock Text="*Введите Имя:"                     
+                       Margin="0 3 0 0"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                       Height="30"
+                       FontSize="20"
+                       Foreground="Black"
+                       TextAlignment="Left"
+                       Padding="00"/>
+
+            <TextBox   x:Name="TbName"  
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                           Margin="0 5"
+                           Height="40"
+                           FontSize="17"
+                       Padding="5" 
+                           Foreground="Black"
+                           BorderThickness="0"
+                           Text="Name"
+                           HorizontalContentAlignment="Left"
+                       GotFocus="TbGotFocus"
+                       LostFocus="TbLostFocus"/>
+
+            <TextBlock Text="*Введите логин:"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                       Margin="0 3 0 0"
+                       Height="30"
+                       FontSize="20"
+                       Foreground="Black"
+                       TextAlignment="Left"
+                       Padding="0"/>
+
+            <TextBox   x:Name="TbLogin"
+                       Text="Login"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                       GotFocus="TbGotFocus"
+                       LostFocus="TbLostFocus"
+                       Margin="0 5"
+                       Height="40"
+                       Padding="5" 
+                       FontSize="17"
+                       BorderThickness="0"
+                       Foreground="Black"
+                       TextAlignment="Left"/>
+
+
+            <TextBlock Text="*Введите пароль:"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                       Margin="0 3 0 0"
+                       Height="30"
+                       FontSize="20"
+                       Foreground="Black"
+                       TextAlignment="Left"
+                       Padding="0"/>
+
+            <TextBox   x:Name="TbPassword"
+                           
+                       GotFocus="TbGotFocus"
+                       LostFocus="TbLostFocus"
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                           Margin="0 5"
+                           Height="40"
+                           FontSize="20"
+                       Padding="5" 
+                           Foreground="Black"
+                           BorderThickness="0"
+                           Text="Password"
+                           HorizontalContentAlignment="Left"/>
+
+            <TextBlock Text="*Повторите пароль:"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                       Margin="0 3 0 0"
+                       Height="30"
+                       FontSize="20"
+                       Foreground="Black"
+                       TextAlignment="Left"
+                       Padding="0"/>
+
+            <TextBox   x:Name="TbPasswordAgain"
+                           
+                       GotFocus="TbGotFocus"
+                       LostFocus="TbLostFocus"
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                           Margin="0 5"
+                           Height="40"
+                           FontSize="20"
+                       Padding="5" 
+                           Foreground="Black"
+                           BorderThickness="0"
+                           Text="PasswordAgain"
+                           HorizontalContentAlignment="Left"/>
+
+            <TextBlock Text="*Введите номер телефона:"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                       Margin="0 3 0 0"
+                       Height="30"
+                       FontSize="18"
+                       Foreground="Black"
+                       TextAlignment="Left"
+                       
+                       Padding="0"/>
+
+            <TextBox   x:Name="TbPhone"
+                           
+                       GotFocus="TbGotFocus"
+                       LostFocus="TbLostFocus"
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                           Margin="0 5"
+                       
+                           Height="40"
+                       Padding="5" 
+                       FontSize="20"
+                       
+                           Foreground="Black"
+                           BorderThickness="0"
+                           Text="88005553535"
+                           HorizontalContentAlignment="Left"/>
+
+            <TextBlock Text="Введите Email:"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                       Margin="0 3 0 0"
+                       Height="30"
+                       FontSize="20"
+                     Foreground="Black"
+                      TextAlignment="Left"
+                       Padding="00"/>
+
+            <TextBox   x:Name="TbEmail"
+                           
+                       GotFocus="TbGotFocus"
+                       LostFocus="TbLostFocus"
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                           Margin="0 5"                         
+                           FontSize="20"
+                       Height="40"
+                       Padding="5"                        
+                           Foreground="Black"
+                           BorderThickness="0"
+                           Text="Velick567p@mail.ru"
+                           HorizontalContentAlignment="Left"/>
+
+            <TextBlock Text="Введите День рождения:"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                       Margin="0 3 0 0"
+                       Height="30"
+                       FontSize="20"
+                      Foreground="Black"
+                       TextAlignment="Left"
+                       Padding="00"/>
+
+            <DatePicker   x:Name="DpBirthday"                         
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                           Margin="0 5"
+                           Height="40"
+                       Padding="5" 
+                       FontSize="20"
+                           Foreground="Black"
+                           BorderThickness="0"
+                           HorizontalContentAlignment="Left"
+                          />
+            <TextBlock Text="*Выберете пол:"
+                       Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                       Margin="0 3 0 0"
+                       Height="30"
+                       FontSize="20"
+                       Foreground="Black"
+                       TextAlignment="Left"
+                       Padding="00"/>
+
+            <ComboBox
+                      x:Name="CbGender"
+                           SelectedIndex="1"
+                           Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                           Margin="0 5"
+                           Height="30"
+                FontSize="20"
+                           Foreground="Black"
+                           BorderThickness="0"
+                           Text="Email@Gmail.com"
+                           HorizontalContentAlignment="Left"
+                      BorderBrush="Transparent">
+            </ComboBox>
+
+            <Button
+                    x:Name="BtnGo"
+                    Height="30"
+                    Margin="30 10 30 0"
+                    Content="Зарегестрироваться"
+                    FontSize="17"
+                Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                    Foreground="Black"
+                    BorderThickness="1"
+                 BorderBrush="Transparent"
+                    Click="BtnGo_Click"/>
+
+
+            <Button x:Name="BtnToAuth"
+                Content="К окну авторизации"
+                   Background="Transparent"
+                       FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                   Foreground="Black"
+                   HorizontalContentAlignment="Center"
+                    BorderThickness="1"
+                    FontSize="15"
+                    BorderBrush="Transparent"                   
+                   Margin="30 10"
+                   
+                   />
+
+        </StackPanel>
     </Grid>
 </Window>

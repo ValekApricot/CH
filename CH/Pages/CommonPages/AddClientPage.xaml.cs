@@ -29,7 +29,7 @@ namespace CoffeeHouse.Pages.CommonPages
         {
             InitializeComponent();
             CbGender.SelectedIndex = 0;
-            CbGender.ItemsSource=Context.Gender.ToList();
+            CbGender.ItemsSource = Context.Gender.ToList();
             CbGender.DisplayMemberPath = "Gender1";
         }
 
@@ -41,7 +41,7 @@ namespace CoffeeHouse.Pages.CommonPages
                 MessageBox.Show("Все поля с * должны быть заполненными");
                 return;
             }
-            if (TbPassword.Text!=TbPasswordAgain.Text)
+            if (TbPassword.Text != TbPasswordAgain.Text)
             {
                 MessageBox.Show("Пароли должны совпадать");
                 return;
@@ -70,7 +70,7 @@ namespace CoffeeHouse.Pages.CommonPages
             }
             guest.IDLevelDiscount = 1;
             guest.Score = 0;
-            guest.Phone= TbPhone.Text;
+            guest.Phone = TbPhone.Text;
             guest.DiscountCode = rnd.Next(100000, 999999).ToString();
             Context.Guest.Add(guest);
             Context.SaveChanges();
@@ -81,8 +81,8 @@ namespace CoffeeHouse.Pages.CommonPages
         private void TbGotFocus(object sender, RoutedEventArgs e)
         {
             TextBox a = sender as TextBox;
-            tbWord= a.Text;
-            if ( a.Text== "Login" || a.Text == "Name" || a.Text == "Password" || a.Text == "PasswordAgain" || a.Text == "89000000000" || a.Text == "Email@Gmail.com")
+            tbWord = a.Text;
+            if (a.Text == "Login" || a.Text == "Name" || a.Text == "Password" || a.Text == "PasswordAgain" || a.Text == "89000000000" || a.Text == "Email@Gmail.com")
             {
                 a.Text = "";
             }
@@ -96,6 +96,10 @@ namespace CoffeeHouse.Pages.CommonPages
                 a.Text = tbWord;
             }
         }
+
+        private void BtnToAuth_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
-//
