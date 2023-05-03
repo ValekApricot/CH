@@ -83,7 +83,22 @@
                            FontFamily="Times New Roman"
                 Content="Клиенты"
                 BorderThickness="2"
-                Margin="316,182,316,182" Click="btnGuestList_Click"
+                Margin="316,224,316,140"
+                Click="btnGuestList_Click"
+                />
+
+
+        <Button x:Name="btnOrders"
+                Background="Transparent"
+                BorderBrush="Transparent"
+                Foreground="White"
+                Content="Продажи"
+                    FontSize="20"
+                FontStyle="Italic"
+                           FontWeight="DemiBold"
+                           FontFamily="Times New Roman"
+                BorderThickness="2"
+                    Click="btnOrders_Click" Margin="36,319,543,44"
                 />
 
 

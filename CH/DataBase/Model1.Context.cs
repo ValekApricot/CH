@@ -41,6 +41,7 @@ namespace CoffeeHouse.DataBase
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<WorkShift> WorkShift { get; set; }
         public virtual DbSet<VW_LevelDiscountGuest> VW_LevelDiscountGuest { get; set; }
+        public virtual DbSet<vw_Orders> vw_Orders { get; set; }
         public virtual DbSet<VW_TheBiggestGuest> VW_TheBiggestGuest { get; set; }
         public virtual DbSet<VW_WorkShiftEmploee> VW_WorkShiftEmploee { get; set; }
     

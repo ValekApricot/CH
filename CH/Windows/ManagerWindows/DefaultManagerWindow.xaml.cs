@@ -31,6 +31,7 @@ namespace CoffeeHouse.Windows.ManagerWindows
             {
                 btnEmployeeList.IsEnabled = false;
                 btnGuestList.IsEnabled = false;
+                btnOrders.IsEnabled = false;
             }
         }
 
@@ -59,6 +60,13 @@ namespace CoffeeHouse.Windows.ManagerWindows
         {
             AutorizationWindow autorizationWindow = new AutorizationWindow();
             autorizationWindow.Show();
+            Close();
+        }
+
+        private void btnOrders_Click(object sender, RoutedEventArgs e)
+        {
+            CheckOrderWindow checkOrderWindow = new CheckOrderWindow();
+            checkOrderWindow.Show();
             Close();
         }
     }
