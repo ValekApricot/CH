@@ -1,6 +1,7 @@
 ﻿using CoffeeHouse.Windows.CommonWindows;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,8 @@ namespace CoffeeHouse.Windows.CommonWindows
         {
             InitializeComponent();
             GetProductList();
+            DateTime dateTime = new DateTime(2023, 5, 25);
+            DiscountTHU(/*DateTime.Now*/dateTime, Convert.ToDouble(tbAllCost.Text));
         }
         void GetProductList()
         {
@@ -36,6 +39,27 @@ namespace CoffeeHouse.Windows.CommonWindows
                 tbAllCost.Text = Convert.ToString(Convert.ToDouble(tbAllCost.Text) + Convert.ToDouble(item.Price) * item.Quantity);
             }
         }
+
+        void DiscountTHU(DateTime dateTime, double Cost)
+        {
+            double day = dateTime.Day;
+            string dayOfWeek = dateTime.DayOfWeek.ToString();
+
+            if ((day / 7) > 0 && dayOfWeek == "Thursday")
+            {
+                tbCostText.Text = "Цена со скидкой:  ";
+                tbCostText.Width = 400;
+                for (int i = 0; i < stuffsCart.Count; i++)
+                {
+                    stuffsCart[i].Price -= Convert.ToDecimal(Convert.ToDouble(stuffsCart[i].Price) * 0.04);
+                }
+                GetProductList();
+            }
+
+
+
+        }
+
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
@@ -106,20 +130,32 @@ namespace CoffeeHouse.Windows.CommonWindows
                     Context.SaveChanges();
                 }
 
-
-                foreach (var item in stuffsCart)
+                if (stuffsCart.Count > 0)
                 {
-                    DataBase.StuffList stuffList = new DataBase.StuffList();
-                    stuffList.IDStuff = item.IDStuff;
-                    stuffList.Quantity = item.Quantity;
-                    stuffList.IDCheck = Context.Check.ToList().LastOrDefault().IDCheck;
-                    Context.StuffList.Add(stuffList);
-                    Context.SaveChanges();
+
+
+                    foreach (var item in stuffsCart)
+                    {
+                        DataBase.StuffList stuffList = new DataBase.StuffList();
+                        stuffList.IDStuff = item.IDStuff;
+                        stuffList.Quantity = item.Quantity;
+                        stuffList.IDCheck = Context.Check.ToList().LastOrDefault().IDCheck;
+                        Context.StuffList.Add(stuffList);
+                        Context.SaveChanges();
+                    }
+                    MessageBox.Show("Продукты успешно добавлены");
+
+                    ProductListWindow productListWindow = new ProductListWindow();
+                    productListWindow.Show();
+                    Close();
                 }
-                MessageBox.Show("Продукты успешно добавлены");
-                ProductListWindow productListWindow = new ProductListWindow();
-                productListWindow.Show();
-                Close();
+                else
+                {
+                    MessageBox.Show("В корзине нет продукции");
+                    ProductListWindow productListWindow = new ProductListWindow();
+                    productListWindow.Show();
+                    Close();
+                }
             }
             catch
             {

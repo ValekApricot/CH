@@ -164,7 +164,8 @@
                 Click="btnPay_Click"/>
 
         <StackPanel HorizontalAlignment="Right" Grid.Row="3" Orientation="Horizontal">
-            <TextBlock                  
+
+            <TextBlock x:Name="tbCostText"                 
                 Width="200"
                 Text="Цена:"
                 TextAlignment="Right"
