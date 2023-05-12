@@ -23,12 +23,13 @@ namespace CoffeeHouse.Windows.CommonWindows
     /// </summary>
     public partial class CartWindow : Window
     {
+        bool PriseOff = false;
         public CartWindow()
         {
             InitializeComponent();
             GetProductList();
-            DateTime dateTime = new DateTime(2023, 5, 25);
-            DiscountTHU(/*DateTime.Now*/dateTime, Convert.ToDouble(tbAllCost.Text));
+            DiscountTHU(DateTime.Now, Convert.ToDouble(tbAllCost.Text));
+            //stuffsCart = DiscountTHU(DateTime.Now, tbAllCost.Text,stuffsCart);
         }
         void GetProductList()
         {
@@ -40,25 +41,45 @@ namespace CoffeeHouse.Windows.CommonWindows
             }
         }
 
-        void DiscountTHU(DateTime dateTime, double Cost)
+        void DiscountTHU(DateTime dateTime, double Cst)
         {
             double day = dateTime.Day;
             string dayOfWeek = dateTime.DayOfWeek.ToString();
 
+
             if ((day / 7) > 0 && dayOfWeek == "Thursday")
             {
-                tbCostText.Text = "Цена со скидкой:  ";
+                tbCostText.Text = "Цена с учётом скидки";
                 tbCostText.Width = 400;
                 for (int i = 0; i < stuffsCart.Count; i++)
                 {
-                    stuffsCart[i].Price -= Convert.ToDecimal(Convert.ToDouble(stuffsCart[i].Price) * 0.04);
+                    stuffsCart[i].Price -= Convert.ToDecimal(Convert.ToDouble((stuffsCart[i].Price)) * 0.04);
                 }
                 GetProductList();
+                PriseOff = true;
             }
-
-
-
         }
+
+
+
+        //----------------StupidUnlessMethod
+
+        //public static ObservableCollection<DataBase.Stuff> DiscountTHU(DateTime dateTime, string Cst, ObservableCollection<DataBase.Stuff> startUnlessCollection)
+        //{
+        //    Double.TryParse(Cst, out double DCst) ;
+        //    double day = dateTime.Day;
+        //    string dayOfWeek = dateTime.DayOfWeek.ToString();
+        //    ObservableCollection<DataBase.Stuff> UslessCollection = startUnlessCollection;
+
+        //    if ((day / 7) > 0 && dayOfWeek == "Thursday")
+        //    {
+        //        for (int i = 0; i < startUnlessCollection.Count; i++)
+        //        {
+        //            UslessCollection[i].Price -= Convert.ToDecimal(Convert.ToDouble((UslessCollection[i].Price)) * 0.04);
+        //        }
+        //    }
+        //    return UslessCollection;
+        //}
 
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
@@ -144,6 +165,16 @@ namespace CoffeeHouse.Windows.CommonWindows
                         Context.SaveChanges();
                     }
                     MessageBox.Show("Продукты успешно добавлены");
+
+
+                    if (PriseOff)
+                    {
+                        for (int i = 0; i < stuffsCart.Count; i++)
+                        {
+                            stuffsCart[i].Price += Convert.ToDecimal(Convert.ToDouble(((stuffsCart[i].Price)) / 96) * 4);
+                        }
+                        Context.SaveChanges();
+                    }
 
                     ProductListWindow productListWindow = new ProductListWindow();
                     productListWindow.Show();
