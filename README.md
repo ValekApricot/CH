@@ -2,7 +2,7 @@
 
 <b>3ИСП9-14 Сычев Валентин COFFEE HOUSE</b>
 
-<b> База Данных </b>
+<b> База Данных. </b>
 
 
 ![image (1)](https://user-images.githubusercontent.com/116540788/220069111-68aa3be8-ee23-47eb-b6f0-fc54567519d5.png)
