@@ -407,7 +407,6 @@
     <Resource Include="Resourses\Images\JpgFormat\fonstola.ru_398778.jpg" />
     <Resource Include="Resourses\Images\JpgFormat\1380310295-kofe-ch2--22.jpg" />
     <Resource Include="Resourses\Images\JpgFormat\1380316948-kofe-ch7--73.jpg" />
-    <Resource Include="Resourses\Images\JpgFormat\1380310823-kofe-ch5--63.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataBase\Model1.Context.tt">
