@@ -18,7 +18,7 @@
            
         
         <Grid.Background>
-                <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\JpgFormat\1645308068_30-phonoteka-org-p-fon-dlya-kofeinogo-menyu-33.png"/>
+            <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\JpgFormat\\1659978602_41-kartinkin-net-p-oboi-kofe-s-molokom-krasivo-49.jpg"/>
             </Grid.Background>
         <StackPanel Width="100" 
                     

@@ -13,7 +13,7 @@
         Width="800">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\JpgFormat\1659978602_41-kartinkin-net-p-oboi-kofe-s-molokom-krasivo-49.jpg"/>
+            <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\JpgFormat\\1659978602_41-kartinkin-net-p-oboi-kofe-s-molokom-krasivo-49.jpg"/>
         </Grid.Background>
 
         <StackPanel Margin="0 0 500 0">

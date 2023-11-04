@@ -13,7 +13,7 @@
     
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="D:\CoffeeHouse\CoffeeHouse\Resourses\Images\JpgFormat\1380310295-kofe-ch2--22.jpg"/>
+            <ImageBrush ImageSource="D:\CH\CH\Resourses\Images\JpgFormat\1380310295-kofe-ch2--22.jpg"/>
         </Grid.Background>
 
         <Rectangle Stroke="Black"

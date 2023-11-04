@@ -399,7 +399,6 @@
     <Resource Include="Resourses\Images\PngFormat\icons8-remove-50.png" />
     <Resource Include="Resourses\Images\PngFormat\img_136006.png" />
     <Resource Include="Resourses\Images\JpgFormat\1645308068_30-phonoteka-org-p-fon-dlya-kofeinogo-menyu-33.png" />
-    <Resource Include="Resourses\Images\JpgFormat\627d0e65d9da494abaf78cb738190d6d.jpeg" />
     <Resource Include="Resourses\Images\PngFormat\4369555.png" />
     <Resource Include="Resourses\Images\PngFormat\3585896.png" />
     <Resource Include="Resourses\Images\JpgFormat\1659978602_41-kartinkin-net-p-oboi-kofe-s-molokom-krasivo-49.jpg" />
@@ -421,6 +420,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resourses\Images\JpgFormat\627d0e65d9da494abaf78cb738190d6d.jpeg" />
     <Resource Include="Resourses\Images\PngFormat\png-transparent-magnifying-glass-computer-icons-magnifier-magnifying-glass-glass-blue-human-eye.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
