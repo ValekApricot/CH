@@ -420,7 +420,6 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-    <Resource Include="Resourses\Images\JpgFormat\627d0e65d9da494abaf78cb738190d6d.jpeg" />
     <Resource Include="Resourses\Images\PngFormat\png-transparent-magnifying-glass-computer-icons-magnifier-magnifying-glass-glass-blue-human-eye.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
