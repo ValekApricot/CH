@@ -112,7 +112,7 @@
 
             <Button 
                 x:Name="BtnToReg"
-                Content="Нет аккаунта? Регистрация"
+                Content="Нет аккаунта? Регистрация:"
                    Background="Transparent"
                    Foreground="White"
                    HorizontalContentAlignment="Center"
